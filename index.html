@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C.O.R.S.I.C.A.</title>
+  <meta name="description" content="C.O.R.S.I.C.A. - Corse Organisant la Reunion Sur Internet de Competences Autonomes.">
+  <style>
+    :root {
+      --ink: #15201d;
+      --muted: #52635e;
+      --line: #d9e1de;
+      --paper: #fbfcfb;
+      --wash: #eef5f2;
+      --accent: #0b6b57;
+      --accent-2: #8d2d23;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    nav {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 750;
+      letter-spacing: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 56px 24px 72px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+      gap: 42px;
+      align-items: start;
+      padding-bottom: 42px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.2rem, 7vw, 4.6rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      font-size: 1.18rem;
+      color: var(--muted);
+    }
+
+    .definition {
+      border-left: 4px solid var(--accent-2);
+      background: var(--wash);
+      padding: 18px 20px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 34px 0 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.45rem;
+      letter-spacing: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .item {
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+    }
+
+    .item h3 {
+      margin: 0 0 7px;
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
+    .item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    footer div {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      main {
+        padding-top: 36px;
+      }
+
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navigation principale">
+      <div class="brand">C.O.R.S.I.C.A.</div>
+      <div class="links">
+        <a href="https://github.com/acorsica/gouvernance">Gouvernance</a>
+        <a href="https://github.com/acorsica/institut-mariani">Institut Mariani</a>
+        <a href="https://github.com/acorsica">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <h1 id="title">C.O.R.S.I.C.A.</h1>
+        <p class="lead">Association pour organiser, documenter et rendre navigables des competences autonomes, des communs democratiques et des initiatives d'interet general liees a la Corse.</p>
+      </div>
+      <div class="definition">
+        Corse Organisant la Reunion Sur Internet de Competences Autonomes
+      </div>
+    </section>
+
+    <section aria-labelledby="mission">
+      <h2 id="mission">Mission</h2>
+      <p>C.O.R.S.I.C.A. publie des documents de gouvernance, des methodes de tracabilite, des initiatives de recherche et des communs civiques. Le site sert de porte d'entree publique ; les depots GitHub restent les sources documentaires tracables.</p>
+    </section>
+
+    <section aria-labelledby="repos">
+      <h2 id="repos">Reperes</h2>
+      <div class="grid">
+        <div class="item">
+          <h3><a href="https://github.com/acorsica/gouvernance">Gouvernance</a></h3>
+          <p>Documents officiels, cartographie du corpus, doctrine d'interet general et separation institutionnelle.</p>
+        </div>
+        <div class="item">
+          <h3><a href="https://github.com/acorsica/institut-mariani">Institut Mariani</a></h3>
+          <p>Recherche et developpement, initiatives reliees et communs cognitifs, civiques, patrimoniaux et numeriques.</p>
+        </div>
+        <div class="item">
+          <h3><a href="https://github.com/acorsica/privai">PrivAI</a></h3>
+          <p>Gouvernance fiduciaire des traces personnelles, profils KYS, jumeaux numeriques et non-substitution.</p>
+        </div>
+        <div class="item">
+          <h3><a href="https://github.com/acorsica/Kudos">Kudos</a></h3>
+          <p>Monnaie complementaire de don et contre-don public, volontaire, nominatif et tracable.</p>
+        </div>
+        <div class="item">
+          <h3><a href="https://github.com/acorsica/marianivillage">Mariani Village</a></h3>
+          <p>Habitat minimaliste autonome pour etudiants et usages saisonniers, a base de containers reversibles.</p>
+        </div>
+        <div class="item">
+          <h3><a href="https://github.com/acorsica/acorsica.org">Source du site</a></h3>
+          <p>Code source public de ce site et index de navigation pour les agents humains et IA.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      L'interconnexion documentaire ne vaut pas confusion institutionnelle. Source publique : GitHub/acorsica.
+    </div>
+  </footer>
+</body>
+</html>
