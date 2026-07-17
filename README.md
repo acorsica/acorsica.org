@@ -1,3 +1,23 @@
+---
+title: acorsica.org
+author: unknown
+date: '2026-06-19'
+document_role: source
+document_kind: documentation
+visibility: public
+lifecycle_state: working
+update_policy: UP-DEFAULT-REVIEWED
+provenance:
+  origin_type: repository
+  origin_repository: acorsica/acorsica.org
+  origin_ref: 652d576
+  origin_date: '2026-06-19'
+  derived_from: []
+review:
+  status: unreviewed
+  reviewed_by: []
+---
+
 # acorsica.org
 
 Public website for **C.O.R.S.I.C.A.** — *Corse Organisant la Réunion Sur Internet de Compétences Autonomes*.
